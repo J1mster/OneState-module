@@ -190,7 +190,7 @@ if taskCanRun2 == true then
 	scroll = {}
 
 	Holder.Name = randomString()
-	Holder.Parent = game.Players.LocalPlayer:WaitForChild("OneStateGui").ChildrenModules
+	Holder.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("OneStateGui").ChildrenModules
 	Holder.Active = true
 	Holder.BackgroundColor3 = Color3.fromRGB(46, 46, 47)
 	Holder.BorderSizePixel = 0
