@@ -1,0 +1,77 @@
+local function runUIsIntro()
+	local ts = game:GetService("TweenService")
+
+	OneStateGui.Enabled = true
+	for _, v in pairs(left:GetChildren()) do
+		v.Position = UDim2.new(-0.268, 0, v.Position.Y) 
+	end 
+
+	for _, v in pairs(right:GetChildren()) do
+		v.Position = UDim2.new(1.268, 0, v.Position.Y) 
+	end 
+
+	for _, v in pairs(statuses:GetChildren()) do
+		v.Position = v.Position+UDim2.new(1, 0, 0, 0)
+	end
+	for _, v in pairs(buttons:GetChildren()) do
+		v.Position = v.Position+UDim2.new(1, 0, 0, 0)
+	end
+
+	BottomInspLabel.TextTransparency = 1
+	BottomTitleLabel.TextTransparency = 1
+	ImageButton.Position = UDim2.new(0.25, 0, 0.5, 0)
+	ImageButton.Size = UDim2.new(0, 7500,0, 7500)
+	ImageButton.Parent = ModuleLoaders
+
+	wait()
+	ts:Create(ImageButton, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {Size = UDim2.new(0, 122, 0, 122)}):Play()
+	ts:Create(ImageButton, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {Position = UDim2.new(0.5, 0, 0.25, 0)}):Play()
+	wait(0.5)
+	ts:Create(ImageButton, TweenInfo.new(0.4, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {ImageTransparency = 1}):Play()
+	wait(0.4)
+	ImageButton.Transparency = 1
+	ImageButton.Position = UDim2.new(0.154, 0, 0.46, 0)
+	ImageButton.Size = UDim2.new(0, 49, 0, 49)
+
+	ts:Create(toggleDarkmode, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.539, 0, 0.636, 0)}):Play()
+	ts:Create(rejoin, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.1), {Position = UDim2.new(0.539, 0, 0.686, 0)}):Play()
+	ts:Create(Reset, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.2), {Position = UDim2.new(0.539, 0, 0.735, 0)}):Play()
+	ts:Create(toggleAdvanced, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.3), {Position = UDim2.new(0.539, 0, 0.79, 0)}):Play()
+	ts:Create(TERMINATEGUI, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.4), {Position = UDim2.new(0.539, 0, 0.85, 0)}):Play()
+	ts:Create(TERMINATETASKS, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.5), {Position = UDim2.new(0.539, 0, 0.901, 0)}):Play()
+
+	ts:Create(darkMode, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0), {Position = UDim2.new(0.081, 0, 0.636, 0)}):Play()
+	ts:Create(_FALSE, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.1), {Position = UDim2.new(0.081, 0, 0.686, 0)}):Play()
+	ts:Create(_FALSE_2, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.2), {Position = UDim2.new(0.081, 0, 0.735, 0)}):Play()
+	ts:Create(advMode, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.3), {Position = UDim2.new(0.081, 0, 0.79, 0)}):Play()
+	ts:Create(_FALSE_3, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.4), {Position = UDim2.new(0.081, 0, 0.85, 0)}):Play()
+	ts:Create(_FALSE_4, TweenInfo.new(0.2, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.5), {Position = UDim2.new(0.081, 0, 0.901, 0)}):Play()
+
+	ts:Create(Dex, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.5), {Position = UDim2.new(0.3, 0, 0.03, 0)}):Play()
+	ts:Create(Frixon_Hub, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.6), {Position = UDim2.new(0.3, 0, 0.114, 0)}):Play()
+	ts:Create(Owl_Hub, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.7), {Position = UDim2.new(0.3, 0, 0.204, 0)}):Play()
+
+	ts:Create(Infinite_Yield, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.5), {Position = UDim2.new(0.7, 0, 0.07, 0)}):Play()
+	ts:Create(TopK3k, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.6), {Position = UDim2.new(0.7, 0, 0.154, 0)}):Play()
+	ts:Create(Rageflake, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out, 0, false, 0.7), {Position = UDim2.new(0.7, 0, 0.244, 0)}):Play()
+
+	Dex.TextScaled = true
+	Frixon_Hub.TextScaled = true
+	Owl_Hub.TextScaled = true
+	Infinite_Yield.TextScaled = true
+	TopK3k.TextScaled = true
+	Rageflake.TextScaled = true
+
+	Dex.TextScaled = false
+	Frixon_Hub.TextScaled = false
+	Owl_Hub.TextScaled = false
+	Infinite_Yield.TextScaled = false
+	TopK3k.TextScaled = false
+	Rageflake.TextScaled = false
+
+	wait(1)
+
+	ts:Create(ImageButton, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {ImageTransparency = 0}):Play()
+	ts:Create(BottomInspLabel, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {TextTransparency = 0}):Play()
+	ts:Create(BottomTitleLabel, TweenInfo.new(0.5, Enum.EasingStyle.Exponential, Enum.EasingDirection.Out), {TextTransparency = 0}):Play()
+end
