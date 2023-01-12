@@ -2,7 +2,7 @@
 -- Version: 3.2
 
 -- Instances:
-
+if taskCanRun6 == true then
 local Rageflake = Instance.new("ScreenGui")
 local RageflakeOpenBut = Instance.new("TextButton")
 local RageflakeScriptsframe = Instance.new("Frame")
@@ -325,3 +325,4 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 30.000
 TextLabel.TextWrapped = true
 TextLabel.Text = "Thanks for Using Rageflake"
+end
