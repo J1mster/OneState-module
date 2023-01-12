@@ -124,7 +124,7 @@ end
 
 -- Main Gui References
 local gui = createDexGui()
-gui.Parent = Services.Players.LocalPlayer.PlayerGui:FindFirstChild("OneStateGui").ChildrenModules
+gui.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("OneStateGui").ChildrenModules
 local contentL = gui:WaitForChild("ContentFrameL")
 local contentR = gui:WaitForChild("ContentFrameR")
 local resources = gui:WaitForChild("Resources")
