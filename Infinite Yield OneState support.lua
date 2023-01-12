@@ -1,4 +1,4 @@
-if canRunTask == true then 
+if taskCanRun2 == true then 
 	if IY_LOADED and not _G.IY_DEBUG == true then
 		-- error("Infinite Yield is already running!",0)
 		return
