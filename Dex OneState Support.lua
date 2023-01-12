@@ -171,7 +171,7 @@ local activeWindows = {}
 local f = {}
 local API = {}
 local RMD = {}
-if taskCanRun == true then 
+if taskCanRun1 == true then 
 
 	-- ScrollBar
 	function f.buttonArrows(size,num,dir)
