@@ -33,7 +33,7 @@ if canRunTask3 == true then
 	FrixonHub.ResetOnSpawn = true
 
 	FrixonHub.Name = "FrixonHub"
-	FrixonHub.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui"):WaitForChild("OneStateGui").ChildrenModules
+	FrixonHub.Parent = game.Players.LocalPlayer.PlayerGui:WaitForChild("OneStateGui").ChildrenModules
 	FrixonHub.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	FrixonHubScripts.Name = "FrixonHubScripts"
